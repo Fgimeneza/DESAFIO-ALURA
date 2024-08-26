@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <img src="./assets/Logo.png">
+            <div class="Ventana1">
+
+                <h1 class="titulo">Encripta o desencripta tu mensaje!</h1>
+            </div>
+        
+            <main class="main">
+              <section class="form box">
+                <form action="">
+                  <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui"></textarea>
+                  <label  for="input-texto" class="lab"><img src="./assets/bi_exclamation-circle-fill.png" >Solo letras minúsculas, sin acento</label>
+                  <input  onclick="myFunction()" class="btn" type="button" value="Encriptar!" id="btn-encriptar">
+                  <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar">
+                </form>
+                
+              </section>
+            <div>
+              <section class="msg box">
+                
+                <img src="./assets/Muñeco.png" class="muneco" id="muneco">
+                <textarea class="text-input1" type="text" id="msg"></textarea>
+                <label  for="input-texto" class="lab">Mensaje Encriptado</label>
+                <input class="btn" type="button" value="Copiar" id="btn-copy">
+              </section>
+            </div>
+            </main>
+                   
+                
+    <footer class="footer">
+        <p>Desarrollado Por Francisco Giménez</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

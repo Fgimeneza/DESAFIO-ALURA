@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet');
+
+
+:root {
+    --color-primario: #D8DFE8;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-Inter: 'Inter', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fuente-Inter, sans-serif);
+
+}
+
+body{
+    background: #2980B9;  
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+
+  
+}
+.titulo{
+    text-align: center;
+    padding-bottom: 5%;
+    padding-right: 15%;
+}
+@media (max-width: 600px) {
+  .titulo {
+      padding-right: 5%;   
+      padding-bottom: 10%; 
+  }
+}
+
+/* Para pantallas medianas (como tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .titulo {
+      padding-right: 10%;  
+      padding-bottom: 7%;  
+  }
+}
+
+/* Para pantallas grandes (como escritorios) */
+@media (min-width: 1025px) {
+  .titulo {
+      padding-right: 15%;  
+      padding-bottom: 5%;  
+  }
+}
+.main {
+    width: 80vw;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 25%;
+    padding-bottom: 3%;
+  }
+  @media (max-width: 600px) {
+    .main {
+        width: 90vw;          
+        padding-left: 10%;    
+        padding-bottom: 5%;   
+    }
+}
+
+
+  .lab {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    
+    color: var(--color-hover);
+    font-family: var(--fuente-Inter);
+  }
+
+  @media (max-width: 600px) {
+    .lab {
+        width: 100%;          /* Ajusta el ancho al 100% del contenedor en pantallas pequeñas */
+        font-size: 14px;      /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+        gap: 8px;             /* Reduce el espacio entre los elementos */
+    }
+}
+
+/* Para pantallas medianas (como tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .lab {
+        width: 80%;           /* Ajusta el ancho al 80% del contenedor en pantallas medianas */
+        font-size: 15px;      /* Mantén el tamaño de la fuente o ajústalo según sea necesario */
+        gap: 12px;            /* Ajusta el espacio entre los elementos */
+    }
+}
+
+/* Para pantallas grandes (como escritorios) */
+@media (min-width: 1025px) {
+    .lab {
+        width: 378px;        /* Mantén el ancho general para pantallas grandes */
+        font-size: 15px;     /* Mantén el tamaño de la fuente general */
+        gap: 16px;           /* Mantén el espacio entre los elementos */
+    }
+}
+
+.header{
+    padding: 0;
+    padding-top: 2%;
+   
+}
+/* Para pantallas pequeñas (como móviles) */
+@media (max-width: 600px) {
+  .header {
+      padding-top: 5%; /* Aumenta el padding-top en pantallas más pequeñas para mejorar el espaciado */
+  }
+}
+
+/* Para pantallas medianas (como tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+      padding-top: 4%; /* Ajusta el padding-top para pantallas medianas */
+  }
+}
+
+/* Para pantallas grandes (como escritorios) */
+@media (min-width: 1025px) {
+  .header {
+      padding-top: 2%; /* Mantiene el padding-top general para pantallas grandes */
+  }
+}
+
+
+.muneco{
+    padding-left: 11%;
+    width: 250px;
+    display: Block;
+}
+/* Para pantallas pequeñas (como móviles) */
+@media (max-width: 600px) {
+  .muneco {
+      padding-left: 5%;    /* Reduce el padding-left para pantallas más pequeñas */
+      width: 150px;        /* Reduce el ancho para adaptarse mejor a pantallas pequeñas */
+      /* Puedes ajustar el display según sea necesario, por ejemplo:
+      display: flex;      /* Si necesitas cambiar el comportamiento del contenedor en pantallas pequeñas */
+      
+  }
+}
+
+/* Para pantallas medianas (como tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .muneco {
+      padding-left: 8%;    /* Ajusta el padding-left para pantallas medianas */
+      width: 200px;        /* Ajusta el ancho para pantallas medianas */
+      /* Puedes ajustar el display según sea necesario */
+  }
+}
+@media (min-width: 1025px) {
+  .muneco {
+      padding-left: 11%;   /* Mantiene el padding-left general para pantallas grandes */
+      width: 250px;        /* Mantiene el ancho general para pantallas grandes */
+      /* Puedes ajustar el display si es necesario, aunque generalmente no cambia en pantallas grandes */
+  }
+}
+.text-input {
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 10%;
+    padding: 0.3em;
+    width: 100%;
+    height: 150px;
+    background-color:#fcfcfa;
+    overflow:hidden;
+   
+  }
+  /* Para pantallas pequeñas (como móviles) */
+@media (max-width: 600px) {
+  .text-input {
+      padding-left: 5%;       /* Reduce el padding-left para pantallas más pequeñas */
+      padding: 0.5em;         /* Ajusta el padding para mejorar el diseño en pantallas pequeñas */
+      height: 120px;          /* Reduce la altura para que el campo de texto se ajuste mejor en pantallas pequeñas */
+  }
+}
+
+/* Para pantallas medianas (como tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .text-input {
+      padding-left: 7%;       /* Ajusta el padding-left para pantallas medianas */
+      padding: 0.4em;         /* Ajusta el padding para pantallas medianas */
+      height: 130px;          /* Ajusta la altura para pantallas medianas */
+  }
+}
+
+/* Para pantallas grandes (como escritorios) */
+@media (min-width: 1025px) {
+  .text-input {
+      padding-left: 10%;      /* Mantiene el padding-left general para pantallas grandes */
+      padding: 0.3em;         /* Mantiene el padding general */
+      height: 150px;          /* Mantiene la altura general */
+  }
+}
+  .text-input1 {
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 10%;
+    padding: 0.3em;
+    width: 100%;
+    height: 150px;
+    background-color:#fcfcfa;
+    overflow:hidden;
+    display: none;
+   
+  }
+  /* Para pantallas pequeñas (como móviles) */
+@media (max-width: 600px) {
+  .text-input1 {
+      display: block;     /* Muestra el campo de texto en pantallas pequeñas */
+      padding-left: 5%;   /* Reduce el padding-left para pantallas más pequeñas */
+      padding: 0.5em;     /* Ajusta el padding para mejorar el diseño en pantallas pequeñas */
+      height: 120px;      /* Reduce la altura para que el campo de texto se ajuste mejor en pantallas pequeñas */
+  }
+}
+
+/* Para pantallas medianas (como tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .text-input1 {
+      display: block;     /* Muestra el campo de texto en pantallas medianas */
+      padding-left: 7%;   /* Ajusta el padding-left para pantallas medianas */
+      padding: 0.4em;     /* Ajusta el padding para pantallas medianas */
+      height: 130px;      /* Ajusta la altura para pantallas medianas */
+  }
+}
+
+/* Para pantallas grandes (como escritorios) */
+@media (min-width: 1025px) {
+  .text-input1 {
+      display: block;     /* Muestra el campo de texto en pantallas grandes */
+      padding-left: 10%;  /* Mantiene el padding-left general para pantallas grandes */
+      padding: 0.3em;     /* Mantiene el padding general */
+      height: 150px;      /* Mantiene la altura general */
+  }
+}
+
+.Ventana1 {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--color-secundario);
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 5%;
+  text-decoration: none;
+  color: var(--color-secundario);
+  font-family: var(--fuente-Inter);
+  background: #000046;  
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  
+  background: linear-gradient(to right, #1CB5E0, #000046); 
+}
+
+@media (max-width: 768px) {
+  .Ventana1 {
+      font-size: 18px;
+      padding-top: 10%;
+      gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Ventana1 {
+      font-size: 16px;
+      padding-top: 15%;
+      gap: 8px;
+      flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--color-hover);
+  width: 100%; /* Se ajusta a 100% del contenedor padre */
+  max-width: 378px; /* Limita el ancho máximo */
+  text-align: center;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-hover);
+  font-family: var(--fuente-Inter);
+}
+
+@media (max-width: 768px) {
+  .btn {
+      font-size: 20px; /* Reducir el tamaño de la fuente en pantallas medianas */
+      max-width: 300px; /* Ajustar el ancho máximo */
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+      font-size: 18px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+      gap: 12px; /* Ajustar el espacio entre los elementos */
+      max-width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+  }
+}
+.btn:hover{
+    background-color: var(--color-terciario);
+}
+
+.footer{
+    color:var(--color-secundario);
+    background-color: var(--color-terciario);
+    padding: 5px;
+    text-align: center;
+    font-family: var(--fuente-Inter);
+    font-size: 24px;
+    font-weight: 400;
+}
